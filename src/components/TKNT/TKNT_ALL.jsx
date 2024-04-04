@@ -3,8 +3,8 @@ import Header from "../Header/Header";
 import Subbanner from "../Subbanner/Subbanner";
 import Footer from "../Footer/Footer";
 import Menu from "../Menu/Menu";
-import Post_Item from "./Post_Item";
 import { getDataBlog } from "../../service/APIService";
+import Post_Item from "./Post_Item";
 
 const TKNT_ALL = () => {
   const [subbanner, setSubbanner] = useState("Tất cả thiết kế");

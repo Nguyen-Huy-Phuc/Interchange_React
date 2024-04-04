@@ -10,7 +10,7 @@ const After_Login = () => {
   return (
     <>
       <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-        <Link to="">TÀI KHOẢN</Link>
+        <Link to="">NHẬT MINH</Link>
         <ul className="sub-menu">
           <li className="menu-item menu-item-type-post_type menu-item-object-page">
             <Link to="/Du_An">Dự án của bạn</Link>
