@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-const After_Login = () => {
+const After_Login = ({ data }) => {
   const handleLogout = (e) => {
     e.preventDefault();
     localStorage.removeItem("authToken");
@@ -10,7 +10,7 @@ const After_Login = () => {
   return (
     <>
       <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-        <Link to="">NHẬT MINH</Link>
+        <Link to="">{data}</Link>
         <ul className="sub-menu">
           <li className="menu-item menu-item-type-post_type menu-item-object-page">
             <Link to="/Du_An">Dự án của bạn</Link>
