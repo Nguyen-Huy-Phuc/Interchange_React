@@ -8,8 +8,12 @@ import { ToastContainer, toast } from "react-toastify";
 const Menu = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [dataProduct, setDataProduct] = useState([]);
+  const [userId, setUserID] = useState("");
+  const [name, setName] = useState("");
   useEffect(() => {
     const token = localStorage.getItem("authToken");
+    setUserID(localStorage.getItem("userID"));
+    setName(localStorage.getItem("name"));
     setLoggedIn(!!token);
     getDataProduct();
   }, []);
@@ -18,6 +22,7 @@ const Menu = () => {
     setDataProduct(data.data.data);
   };
   console.log("a", dataProduct);
+
   return (
     <div className="bigmenu">
       <div className="container">
@@ -99,7 +104,9 @@ const Menu = () => {
               </li>
               <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
                 {loggedIn ? (
-                  <a href="http://localhost:8080/api/product">Báo giá</a>
+                  <a href={`http://localhost:8080/bao-gia/${userId}`}>
+                    Báo giá
+                  </a>
                 ) : (
                   <Link
                     to="/Dang_Nhap"
@@ -119,7 +126,7 @@ const Menu = () => {
               <li className="menu-item menu-item-type-post_type menu-item-object-page">
                 <Link to="/Tu_Van">Tư vấn</Link>
               </li>
-              {loggedIn ? <After_Login /> : <Before_Login />}
+              {loggedIn ? <After_Login data={name} /> : <Before_Login />}
             </ul>
           </div>
         </div>

@@ -19,8 +19,14 @@ const Dang_Nhap_Body = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-  const storeToken = (token) => {
-    localStorage.setItem("authToken", token);
+  const storeToken = (data) => {
+    console.log("dit me fpt", data);
+    localStorage.setItem("authToken", data.token);
+    console.log("dit me fpt 1 lan", data.token);
+    localStorage.setItem("userID", data.userId);
+    console.log("dit me fpt 2 lan", data.userId);
+    localStorage.setItem("name", data.name);
+    console.log("dit me fpt 3 lana", data.name);
   };
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -37,7 +43,8 @@ const Dang_Nhap_Body = () => {
     try {
       const response = await postLogin(email, password);
       const token = response.data;
-      storeToken(token);
+      console.log("This is check", token.data);
+      storeToken(token.data[0]);
       toast.success("Login successful!"); // Display success toast
       navigate("/Home");
     } catch (error) {
