@@ -32,48 +32,48 @@ const Menu = () => {
               </li>
 
               <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                <Link to="">Thiết Kế Nội Thất</Link>
+                <a>Thiết Kế Nội Thất</a>
                 <ul className="sub-menu">
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
                     <Link to="/TKNT_ALL">Tất cả thiết kế</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="TKNT_Tu_Bep">Tủ bếp</Link>
+                    <Link to="/TKNT_Tu_Bep">Tủ bếp</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="TKNT_Phong_ngu">Phòng ngủ</Link>
+                    <Link to="/TKNT_Phong_ngu">Phòng ngủ</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="">Phòng khách</Link>
+                    <Link to="/TKNT_Phong_Khach">Phòng khách</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="TKNT_Phong_Tho">Phòng thờ</Link>
+                    <Link to="/TKNT_Phong_Tho">Phòng thờ</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="TKNT_Phong_Gia_Tri">Phòng giải trí</Link>
+                    <Link to="/TKNT_Phong_Gia_Tri">Phòng giải trí</Link>
                   </li>
                 </ul>
               </li>
               <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                <Link to="">Dự Án Hoàn Thiện</Link>
+                <a>Dự Án Hoàn Thiện</a>
                 <ul className="sub-menu">
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
                     <Link to="/DAHT_ALL">Tất cả dự án</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="DAHT_Tu_Bep">Tủ bếp</Link>
+                    <Link to="/DAHT_Tu_Bep">Tủ bếp</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="DAHT_Phong_Ngu">Phòng ngủ</Link>
+                    <Link to="/DAHT_Phong_Ngu">Phòng ngủ</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="DAHT_Phong_Khach">Phòng khách</Link>
+                    <Link to="/DAHT_Phong_Khach">Phòng khách</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="DAHT_Phong_Tho">Phòng thờ</Link>
+                    <Link to="/DAHT_Phong_Tho">Phòng thờ</Link>
                   </li>
                   <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                    <Link to="DAHT_Phong_Giai_Tri">Phòng giải trí</Link>
+                    <Link to="/DAHT_Phong_Giai_Tri">Phòng giải trí</Link>
                   </li>
                 </ul>
               </li>
